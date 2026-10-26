@@ -1,16 +1,17 @@
-name: MuleSoft CI-CD
+
+name: MuleSoft SAPI CI-CD
 
 on:
   workflow_call:
     inputs:
       deploy_environment:
-        description: GitHub Environment to deploy to
+        description: GitHub Environment to use
         required: true
         type: string
 
   push:
     branches:
-      - main
+      - mainn
 
 permissions:
   contents: read
@@ -20,8 +21,6 @@ jobs:
     name: Build and publish to Exchange
     runs-on: ubuntu-latest
 
-    # Select the environment passed by the calling workflow.
-    # Direct pushes to main use the dev environment by default.
     environment: ${{ inputs.deploy_environment || 'dev' }}
 
     steps:
@@ -76,3 +75,5 @@ jobs:
           -Dplatform.client.secret=${{ secrets.PLATFORM_CLIENT_SECRET }}
           -Dmule.key=${{ secrets.MULE_KEY }}
           -Denv=${{ vars.DEPLOY_ENV }}
+          -DtargetName=${{ vars.TARGET_NAME }}
+          -DpublicUrl=${{ vars.PUBLIC_URL }}
