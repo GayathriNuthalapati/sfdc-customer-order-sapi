@@ -39,7 +39,7 @@ jobs:
           mvn --batch-mode clean deploy
           --settings .settings/settings.xml
           -DskipMunitTests
-          -Dbusiness.group.id=1b09f0a8-fca0-4da3-87c7-a6cd5cb7174a
+          -Dbusiness.group.id=${{ secrets.BUSINESS_ORG_ID }}
         env:
           CA_CLIENT_ID: ${{ secrets.CA_CLIENT_ID }}
           CA_CLIENT_SECRET: ${{ secrets.CA_CLIENT_SECRET }}
@@ -67,7 +67,7 @@ jobs:
           mvn --batch-mode clean package mule:deploy
           --settings .maven/settings.xml
           -DskipMunitTests
-          -Dbusiness.group.id=1b09f0a8-fca0-4da3-87c7-a6cd5cb7174a
+          -Dbusiness.group.id=${{ secrets.BUSINESS_ORG_ID }}
           -Dca.client.id=${{ secrets.CA_CLIENT_ID }}
           -Dca.client.secret=${{ secrets.CA_CLIENT_SECRET }}
           -Dch.environment=${{ vars.CH_ENVIRONMENT }}
@@ -76,4 +76,3 @@ jobs:
           -Dmule.key=${{ secrets.MULE_KEY }}
           -Denv=${{ vars.DEPLOY_ENV }}
           -DtargetName=${{ vars.TARGET_NAME }}
-          -DpublicUrl=${{ vars.PUBLIC_URL }}
