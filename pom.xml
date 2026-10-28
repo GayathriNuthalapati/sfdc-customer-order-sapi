@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>${business.group.id}</groupId>
-	<artifactId>sfdc-customer-order-sapi-dev</artifactId>
+	<artifactId>sfdc-customer-order-sapi-v1-dev</artifactId>
 	<version>1.0.3</version>
 	<packaging>mule-application</packaging>
 
