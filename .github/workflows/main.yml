@@ -1,0 +1,23 @@
+name: SAPI CI-CD
+
+on:
+  push:
+    branches:
+      - feature
+  workflow_dispatch: 
+    inputs:
+      environment:
+        description: Environment to deploy to
+        type: choice
+        options:
+          - dev
+          - qa
+          - prod
+        default: dev
+
+jobs:
+  pipeline:
+    uses: Tejaswi23-png/common-pipeline/.github/workflows/mulesoft-sapi-ci-cd.yml@main
+    with:
+      environment: dev
+    secrets: inherit
