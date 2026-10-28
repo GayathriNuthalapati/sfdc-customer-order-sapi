@@ -19,5 +19,4 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	</secure-properties:config>
 	<global-property doc:name="Global Property" doc:id="bfc0e58f-8a41-4f55-8831-b740590beb6e" name="mule.env" value="dev" />
 	<global-property doc:name="Global Property" doc:id="85e5ceb7-5a80-429e-bd59-c39c2d017a4e" name="securekey" value="mulesecurekey" />
-	<global-property doc:name="Global Property" doc:id="06d166b1-22cf-4367-b075-a5babad89c8a" name="anypoint.platform.gatekeeper" value="disabled" />
 </mule>
