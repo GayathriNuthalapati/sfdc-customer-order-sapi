@@ -12,7 +12,7 @@ on:
         options:
           - dev
           - qa
-          - prod
+          - prod 
         default: dev
 
 jobs:
