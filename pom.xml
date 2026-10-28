@@ -152,8 +152,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>Repository</id>
-			<name>Corporate Repository</name>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/8f8f260c-d4bd-45d8-81ae-4b2b0177e7b0/maven</url>
 			<layout>default</layout>
 		</repository>
