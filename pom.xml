@@ -6,7 +6,7 @@
 
 	<groupId>8f8f260c-d4bd-45d8-81ae-4b2b0177e7b0</groupId>
 	<artifactId>sfdc-customer-order-sapi-v1-dev</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>sfdc-customer-order-sapi-v1-dev</name>
