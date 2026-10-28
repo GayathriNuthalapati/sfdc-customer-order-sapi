@@ -6,7 +6,7 @@
 
 	<groupId>${business.group.id}</groupId>
 	<artifactId>sfdc-customer-order-sapi-dev</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.3</version>
 	<packaging>mule-application</packaging>
 
 	<name>sfdc-customer-order-sapi-v1-dev</name>
@@ -43,7 +43,7 @@
 						<businessGroupId>${business.group.id}</businessGroupId>
 						<environment>${ch.environment}</environment>
 						<target>Cloudhub-US-East-2</target>
-						<applicationName>${application.name}</applicationName>
+						<applicationName>sfdc-customer-order-sapi-v1-dev</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
