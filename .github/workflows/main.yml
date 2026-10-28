@@ -3,7 +3,7 @@ name: SAPI CI-CD
 on:
   push:
     branches:
-      - feature
+      - featur
   workflow_dispatch: 
     inputs:
       environment:
