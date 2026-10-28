@@ -3,7 +3,7 @@ name: SAPI CI-CD
 on:
   push:
     branches:
-      - dev  
+      - dev
   pull_request:
     branches:
       - dev  
@@ -11,7 +11,7 @@ on:
     inputs:
       environment:
         description: Environment to deploy to
-        type: choice
+        type: choice 
         options:
           - dev
           - qa 
