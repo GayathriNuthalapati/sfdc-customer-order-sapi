@@ -22,5 +22,5 @@ jobs:
   pipeline:
     uses: GayathriNuthalapati/common-pipeline/.github/workflows/main.yml@main
     with:
-      environment: ${{ inputs.environment || 'dev' }}
+      environment: dev
     secrets: inherit   
