@@ -3,7 +3,11 @@ name: SAPI CI-CD
 on:
   push:
     branches:
-      - dev
+      - develop
+  pull_request:
+    branches:
+      - develop  
+      
   workflow_dispatch: 
     inputs:
       environment:
